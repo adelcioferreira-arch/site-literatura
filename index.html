@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Literatura do Século XIX — Realismo / Naturalismo / Parnasianismo / Simbolismo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#F7F8FA; --card:#FFFFFF; --accent:#1B2A4A; --gold:#C9A635; --muted:#6B7280;
+      --radius:12px; --glass: rgba(255,255,255,0.6);
+      font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#FBFCFE 0%, #F2F6FB 100%);color:#0f1724}
+    header{position:sticky;top:0;background:var(--card);backdrop-filter: blur(6px);border-bottom:1px solid #e6e9ef;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;z-index:30}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--gold));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-family:'Playfair Display';}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+    nav a.active{color:var(--accent)}
+    main{max-width:1100px;margin:28px auto;padding:0 20px}
+    .hero{background:var(--card);border-radius:16px;padding:28px;display:flex;gap:20px;align-items:center;box-shadow:0 6px 20px rgba(11,22,50,0.06)}
+    .hero .text h1{font-family:'Playfair Display';margin:0;font-size:28px;color:var(--accent)}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:20px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(11,22,50,0.04)}
+    .section-title{font-family:'Playfair Display';color:var(--accent);margin:0 0 10px 0}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .muted{color:var(--muted);font-size:14px}
+    footer{max-width:1100px;margin:32px auto;padding:18px 20px;color:var(--muted);font-size:14px}
+
+    /* content sections */
+    .content{margin-top:18px}
+    .movement{display:flex;gap:18px;align-items:flex-start}
+    .movement img{width:160px;border-radius:8px;object-fit:cover}
+    .movement p{line-height:1.6}
+
+    /* comparativo */
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{border:1px solid #eef2f7;padding:10px;text-align:left}
+    th{background:#fbfbfd}
+
+    /* quiz */
+    .quiz-item{margin-bottom:12px}
+    .choices button{display:block;width:100%;text-align:left;margin:6px 0;padding:8px;border-radius:8px;border:1px solid #e2e8f0;background:white}
+
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.movement{flex-direction:column}.hero{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">L19</div>
+      <div>
+        <div style="font-weight:700">Literatura do Séc. XIX</div>
+        <div class="muted" style="font-size:12px">Realismo • Naturalismo • Parnasianismo • Simbolismo</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#home" class="nav-link active">Início</a>
+      <a href="#realismo" class="nav-link">Realismo</a>
+      <a href="#parnasismo" class="nav-link">Parnas./Simbolismo</a>
+      <a href="#comparativo" class="nav-link">Comparativo</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="content">
+      <div class="hero">
+        <div class="text">
+          <h1>Movimentos Literários do Século XIX no Brasil</h1>
+          <p class="muted">Uma visão clara e interativa sobre Realismo, Naturalismo, Parnasianismo e Simbolismo — características, autores, obras e diferenças.</p>
+          <p style="margin-top:12px"><a class="btn" href="#realismo">Começar pelo Realismo</a></p>
+        </div>
+        <div style="flex:1"></div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <div class="card">
+            <h2 class="section-title">O século XIX — contexto</h2>
+            <p class="muted">O Brasil vivia transição: independência, mudanças sociais, industrialização incipiente e forte influência das ideias europeias. A literatura reagiu a essas transformações, gerando diferentes estilos que refletem debates sociais, estéticos e filosóficos.</p>
+            <ul>
+              <li><strong>Realismo/Naturalismo:</strong> reação ao Romantismo; foco na sociedade e no determinismo.</li>
+              <li><strong>Parnasianismo/Simbolismo:</strong> poesia dividida entre forma e musicalidade/espiritualidade.</li>
+            </ul>
+          </div>
+
+          <div id="preview-realismo" class="card" style="margin-top:16px">
+            <h3 class="section-title">Preview — Realismo & Naturalismo</h3>
+            <div class="movement">
+              <img src="assets/imagens/machado.jpg" alt="Machado de Assis (imagem)" onerror="this.style.display='none'">
+              <div>
+                <p><strong>Realismo</strong>: autor icônico <em>Machado de Assis</em>. Obras fundamentais: <em>Dom Casmurro</em>, <em>Memórias Póstumas de Brás Cubas</em>.</p>
+                <p class="muted">Clique em "Realismo" no menu para ver mais conteúdo pronto para o site.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <aside>
+          <div class="card">
+            <h4 class="section-title">Atalhos úteis</h4>
+            <ul class="muted">
+              <li>Use a seção <strong>Comparativo</strong> para o quiz e tabela.</li>
+              <li>Coloque áudios na pasta <code>/assets/audios/</code> e referencie-os no HTML.</li>
+              <li>Imagens sugeridas: Machado, Aluísio Azevedo, Olavo Bilac, Cruz e Sousa.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4 class="section-title">Checklist</h4>
+            <ol class="muted">
+              <li>Textos prontos por seção</li>
+              <li>Imagens e áudios adicionados</li>
+              <li>Quiz funcional</li>
+              <li>Layout responsivo</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- REALISMO / NATURALISMO -->
+    <section id="realismo" class="content" style="margin-top:26px">
+      <div class="card">
+        <h2 class="section-title">Realismo & Naturalismo</h2>
+        <p class="muted">A prosa do século XIX que rompeu com o sentimentalismo romântico e investigou a sociedade como objeto de estudo.</p>
+
+        <h3>Realismo — Características</h3>
+        <ul>
+          <li>Objetividade e análise psicológica dos personagens.</li>
+          <li>Crítica social e ironia.</li>
+          <li>Foco na cidade e nas relações sociais.</li>
+        </ul>
+
+        <h3>Principais autores (Realismo)</h3>
+        <ul>
+          <li><strong>Machado de Assis</strong> — <em>Dom Casmurro</em>, <em>Memórias Póstumas de Brás Cubas</em>.</li>
+          <img src="assets/imagens/machado.jpg.png" alt="Machado de Assis">
+          <li><strong>Raul Pompeia</strong> — <em>O Ateneu</em>.</li>
+        </ul>
+
+        <hr>
+
+        <h3>Naturalismo — Características</h3>
+        <ul>
+          <li>Cientificismo e determinismo (hereditariedade e meio social).</li>
+          <li>Descrição minuciosa e, às vezes, aspectos cruéis ou chocantes.</li>
+        </ul>
+        <h3>Principais autores (Naturalismo)</h3>
+        <ul>
+          <li><strong>Aluísio Azevedo</strong> — <em>O Cortiço</em>.</li>
+          <li><strong>Adolfo Caminha</strong> — <em>Bom-Crioulo</em>.</li>
+        </ul>
+
+        <details style="margin-top:12px">
+          <summary style="cursor:pointer">Trecho (exemplo) — <em>Memórias Póstumas</em> (Machado)</summary>
+          <p class="muted">"A vida é assim: não é fácil distinguir entre o que é verdade e o que é aparência..." (trecho ilustrativo — para uso em sala: inserir trecho público ou citar com referência).</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- PARNASIANISMO / SIMBOLISMO -->
+    <section id="parnasismo" class="content" style="margin-top:26px">
+      <div class="card">
+        <h2 class="section-title">Parnasianismo & Simbolismo</h2>
+        <p class="muted">Na poesia, surgem duas correntes que dialogam com estética: uma que prioriza a forma e outra que explora o subjetivo e o místico.</p>
+
+        <h3>Parnasianismo — Características</h3>
+        <ul>
+          <li>"Arte pela arte": a forma perfeita é prioridade.</li>
+          <li>Valorização do soneto, métrica rigorosa e vocabulário culto.</li>
+        </ul>
+        <h4>Autor(es):</h4>
+        <ul>
+          <li><strong>Olavo Bilac</strong> — sonetos e poemas de linguagem precisa.</li>
+          <li><strong>Alberto de Oliveira</strong></li>
+        </ul>
+
+        <hr>
+
+        <h3>Simbolismo — Características</h3>
+        <ul>
+          <li>Subjetividade, musicalidade, imagens simbólicas e misticismo.</li>
+          <li>Linguagem sugestiva, metáforas complexas e ritmo.</li>
+        </ul>
+        <h4>Autor(es):</h4>
+        <ul>
+          <li><strong>Cruz e Sousa</strong> — <em>Broquéis</em>.</li>
+          <li><strong>Alphonsus de Guimaraens</strong></li>
+        </ul>
+
+        <details style="margin-top:12px">
+          <summary style="cursor:pointer">Trecho (exemplo) — Cruz e Sousa</summary>
+          <p class="muted">"— Poema exemplo com musicalidade e imagens — (usar trechos autorizados ou indicar consulta ao livro)."</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- COMPARATIVO -->
+    <section id="comparativo" class="content" style="margin-top:26px">
+      <div class="card">
+        <h2 class="section-title">Comparativo Interativo</h2>
+        <p class="muted">Tabela rápida e um quiz para testar conhecimentos — boas opções para inserir na página do grupo.</p>
+
+        <table>
+          <thead>
+            <tr><th>Movimento</th><th>Tipo</th><th>Linguagem</th><th>Temas</th><th>Autores</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Realismo</td><td>Prosa</td><td>Objetiva / irônica</td><td>Crítica social, psicológica</td><td>Machado de Assis</td></tr>
+            <tr><td>Naturalismo</td><td>Prosa</td><td>Científica / descritiva</td><td>Determinismo, meio</td><td>Aluísio Azevedo</td></tr>
+            <tr><td>Parnasianismo</td><td>Poesia</td><td>Formal / métrica</td><td>Estética, forma</td><td>Olavo Bilac</td></tr>
+            <tr><td>Simbolismo</td><td>Poesia</td><td>Subjetiva / musical</td><td>Espiritualidade, sonho</td><td>Cruz e Sousa</td></tr>
+          </tbody>
+        </table>
+
+        <div style="margin-top:16px" class="card">
+          <h3 class="section-title">Quiz rápido</h3>
+          <div id="quiz"></div>
+          <div id="quiz-result" style="margin-top:10px" class="muted"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Conteúdo preparado para trabalho escolar — personalize com imagens e áudios em <code>/assets/</code>. Prazo de entrega: 12/12/2025.
+  </footer>
+
+  <script>
+    // Navegação simples: ativa link ao rolar ou clicar
+    const links = document.querySelectorAll('.nav-link');
+    function setActive(hash){
+      links.forEach(a=>a.classList.toggle('active', a.getAttribute('href')===hash));
+    }
+    window.addEventListener('hashchange', ()=> setActive(location.hash || '#home'));
+    // inicial
+    if(!location.hash) location.hash = '#home';
+    setActive(location.hash);
+
+    // Quiz: perguntas simples
+    const quizData = [
+      {q:'Qual movimento prioriza "arte pela arte"?', a:['Realismo','Parnasianismo','Simbolismo','Naturalismo'], correct:1},
+      {q:'Qual autor é associado ao Realismo brasileiro?', a:['Olavo Bilac','Cruz e Sousa','Machado de Assis','Aluísio Azevedo'], correct:2},
+      {q:'Que movimento enfatiza determinismo e cientificismo?', a:['Simbolismo','Parnasianismo','Naturalismo','Romantismo'], correct:2},
+      {q:'Qual movimento valoriza a musicalidade e o subjetivo?', a:['Simbolismo','Naturalismo','Realismo','Parnasianismo'], correct:0},
+      {q:'"Dom Casmurro" é obra de qual autor?', a:['Aluísio Azevedo','Machado de Assis','Raul Pompeia','Olavo Bilac'], correct:1}
+    ];
+
+    function buildQuiz(){
+      const qDiv = document.getElementById('quiz');
+      qDiv.innerHTML='';
+      quizData.forEach((it, idx)=>{
+        const wrap = document.createElement('div'); wrap.className='quiz-item card';
+        const h = document.createElement('div'); h.innerHTML = `<strong>Q${idx+1}.</strong> ${it.q}`;
+        wrap.appendChild(h);
+        const choices = document.createElement('div'); choices.className='choices';
+        it.a.forEach((choice,i)=>{
+          const btn = document.createElement('button'); btn.innerText = choice;
+          btn.addEventListener('click', ()=>{
+            if(i===it.correct){ btn.style.borderColor='green'; btn.style.background='#ecfff0'; btn.innerText = '✔ ' + choice;} else { btn.style.borderColor='red'; btn.style.background='#fff0f0'; btn.innerText = '✖ ' + choice; }
+            // disable siblings
+            Array.from(choices.children).forEach(b=>b.disabled=true);
+            updateResult();
+          });
+          choices.appendChild(btn);
+        });
+        wrap.appendChild(choices);
+        qDiv.appendChild(wrap);
+      });
+    }
+    function updateResult(){
+      const buttons = document.querySelectorAll('#quiz .choices button');
+      let correct=0, total=quizData.length;
+      // count checked corrects
+      quizData.forEach((it,idx)=>{
+        const choices = document.querySelectorAll('#quiz .quiz-item')[idx].querySelectorAll('.choices button');
+        choices.forEach((b,i)=>{ if(b.disabled && i===it.correct && b.innerText.includes('✔')) correct++; });
+      });
+      document.getElementById('quiz-result').innerText = `Acertos: ${correct} / ${total}`;
+    }
+    buildQuiz();
+
+    // Smooth scroll on nav click
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        e.preventDefault(); const target = document.querySelector(a.getAttribute('href'));
+        if(target){ target.scrollIntoView({behavior:'smooth',block:'start'}); history.replaceState(null,'',a.getAttribute('href')); setActive(a.getAttribute('href')); }
+      });
+    });
+
+  </script>
+</body>
+</html>
